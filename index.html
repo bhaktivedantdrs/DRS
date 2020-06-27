@@ -7,10 +7,14 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Font-Awesome CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="styles.css">
         <title>BVH PROJECT</title>
     </head>
     <body class ="jumbotron">
+
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -19,81 +23,68 @@
                 <a class="navbar-brand mr-auto" href="#"> <a class="navbar-brand mr-auto" href="#"><img src="img/logo.gif" height="30" width="100"></a></a>
                 <div class="collapse navbar-collapse ml-5" id="Navbar">
                     <ul class="navbar-nav mr-auto">
-                        <li class = "nav-item active"><a class = "nav-link" href="#">Time Tracker</a></li>
-                        <li class = "nav-item"><a class = "nav-link" href="#">Dashboard</a></li>
-                        <li class = "nav-item"><a class = "nav-link" href="#">Team</a></li>
-                        <li class = "nav-item"><a class = "nav-link" href="#">Projects</a></li>
+                        <li class = "nav-item active ml-md-5"><a class = "nav-link" href="#"><i class="fa fa-clock-o"></i> Time Tracker</a></li>
+                        <li class = "nav-item ml-md-4"><a class = "nav-link" href="./work.html"><i class="fa fa-tasks"></i> Work</a></li>
+                        
                         
                     </ul>
                 </div>
             </div>
         </nav>
+
         <header >
             <div class ="container head mt-md-2">     
-                    <h2 style="color:black;">Welcome User Name,</h2>
+                    <h2>Welcome Executor Side,</h2>
             </div>
         </header>
+
         <div class ="container data mt-md-3">
             <div class="row row-content">
                 <div class="col-12">
                     <form>
                         <div class="form-row row  d-flex align-items-center justify-content-center">  
-                                <div class="col-7 col-sm-4">
-                                    <textarea type="text" class="form-control rounded-0"  placeholder="What have you done?"></textarea>
-                                </div>
-                                <div class="col-5 col-sm-2 mt-2 ">
-                                    <input type="text" class="form-control" placeholder="Project Name">   
+                                
+                                <div class="col-6 col-sm-2 mt-2 ">
+                                    <input type="text" class="form-control" placeholder="Activity Name" required>
                                 </div>  
-                                <div class="col-4 col-sm-2 mt-2">
-                                    <input type="text" class="form-control" placeholder="Start Time">   
-                                </div>  
-                                <div class="col-4 col-sm-2 mt-2 ">
-                                    <input type="text" class="form-control" placeholder="End Time">   
-                                </div>  
-                                <div class="col-4 col-sm-1 mt-2 ">
-                                    <input type="text" class="form-control" placeholder="Date">   
+                                <div class="col-6 col-sm-2 mt-2 ">
+                                    <select class="form-control" required>
+                                        <option value = "" >Tags</option>
+                                        <option value="Meeting">Meeting</option>
+                                        <option value = "Research">Research</option>
+                                        <option value = "Development">Development</option>
+                                        <option value="Prayer">Prayer</option>
+                                    </select>       
                                 </div> 
-                                <div class="col-3 col-sm-1 mt-2">
-                                    <button class="btn btn-dark form-control">Add</button>    
+                                <div class="col-6 col-sm-2 mt-2">
+                                    <input type="time" class="form-control"  required>   
+                                </div>  
+                                <div class="col-6 col-sm-2 mt-2 ">
+                                    <input type="time" class="form-control"  required>   
+                                </div>  
+                                <div class="col-6 col-sm-2 mt-2 ">
+                                    <input type="date" class="form-control" required>   
                                 </div> 
+                                <div class="col-6 col-sm-2 mt-2">                                     
+                                    <input type="file" class="form-control-file" >
+                                 </div>
            
                         </div>
+                        <div class="form-row row  d-flex align-items-center justify-content-center">  
+                            <div class="col-12  mt-2">
+                                <textarea type="text" class="form-control rounded-0"  placeholder="What have you done?" required></textarea>
+                            </div>
+                        </div> 
+                        <div class="form-row row  d-flex align-items-center justify-content-center">  
+                            <div class="col-3 col-sm-1 mt-2">
+                                <button class="btn btn-dark form-control">Add</button>    
+                            </div> 
+                        </div>  
                     </form>
                 </div>
             </div>
         </div>
-        <!-- <div class ="container data mt-md-3">
-            <div class="row row-content">
-                <div class="col-12">
-                    <form>
-                        <div class="form-row row  d-flex align-items-center justify-content-center">  
-                                <div class="col-7 col-sm-4 mt-2">
-                                    <textarea type="text" class="form-control rounded-0"  placeholder="What have you done?"></textarea>
-                                </div>
-                             
-                                <div class="col-5 col-sm-2 mt-2">
-                                    <input type="text" class="form-control" placeholder="Project Name">   
-                                </div>  
-                                <div class="col-4 col-sm-2 mt-2">
-                                    <input type="text" class="form-control" placeholder="Start Time">   
-                                </div>  
-                                <div class="col-4 col-sm-2 mt-2">
-                                    <input type="text" class="form-control" placeholder="End Time">   
-                                </div>  
-                                <div class="col-4 col-sm-1 mt-2">
-                                    <input type="text" class="form-control" placeholder="Date">   
-                                </div> 
-                                <div class="col-3 col-sm-1 mt-2">
-                                    <button class="btn btn-dark form-control">Add</button>    
-                                </div> 
-                              
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div> -->
-
-
+        
         <footer>
 
         </footer>

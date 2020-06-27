@@ -8,7 +8,7 @@
     padding: 5px 0px 5px 0px;
     border-bottom: 1px ridge;
     min-height:0px;
-    background:black;
+    background:	aliceblue;
 }
 
 .footer{
@@ -20,8 +20,8 @@
 .jumbotron {
     /* padding:70px 30px 70px 30px; */
     margin:0px auto;
-    background: linen ;
-    color:floralwhite;
+    background: white;
+    
 }
 
 
@@ -45,3 +45,13 @@ body{
 /* textarea{
     overflow: hidden;
 } */
+
+h2{
+    color: black;
+}
+
+.btn{
+    background-color: black;
+}
+
+
