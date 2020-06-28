@@ -41,111 +41,115 @@
                 <div class="col-12">
                     <div class="form-row row d-flex align-items-center justify-content-center">
                         <div class="col-12">
-                            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control " id = "myInput"  type="search" placeholder="Search" aria-label="Search">
                         </div>
                     </div>   
                 </div> 
             </div> 
         </div>    
-        <div class = "container" id = "data">
-            <div class ="container mt-5">
-                <div class="row row-content">
-                    <div class="col-12">
-                        <form>
-                            <div class="form-row row  d-flex align-items-center justify-content-center">      
-                                <div class="col-6 col-sm-2 mt-2 ">
-                                    <input type="text" class="form-control" value = "BVH"  readonly>
-                                </div>  
-                                <div class="col-6 col-sm-2 mt-2 ">
-                                    <select class="form-control" required disabled readonly>
-                                        <option value = "" >Tags</option>
-                                        <option value="Meeting" selected>Meeting</option>
-                                        <option value = "Research">Research</option>
-                                        <option value = "Development">Development</option>
-                                        <option value="Prayer">Prayer</option>
-                                    </select>       
-                                </div> 
-                                <div class="col-6 col-sm-2 mt-2">
-                                    <input type="time" class="form-control" value="14:00"  required readonly>   
-                                </div>  
-                                <div class="col-6 col-sm-2 mt-2 ">
-                                    <input type="time" class="form-control" value="15:00" required readonly>   
-                                </div>  
-                                <div class="col-6 col-sm-2 mt-2 ">
-                                    <input type="date" class="form-control" value="2020-06-27" required readonly>   
-                                </div> 
-                                <div class="col-6 col-sm-2 mt-2">                                     
-                                    <input type="file" class="form-control-file" disabled >
+        <div class = "container"  >
+            <ul id = "data3">
+            <div class ="container mt-5" >
+                <li>BVH<div class="row row-content" >
+                        <div class="col-12" >
+                            <form>
+                                <div class="form-row row  d-flex align-items-center justify-content-center" >      
+                                    <div class="col-6 col-sm-2 mt-2 ">
+                                        <input type="text" class="form-control" value = "BVH"  readonly>
+                                    </div>  
+                                    <div class="col-6 col-sm-2 mt-2 ">
+                                        <select class="form-control" required disabled readonly>
+                                            <option value = "" >Tags</option>
+                                            <option value="Meeting" selected>Meeting</option>
+                                            <option value = "Research">Research</option>
+                                            <option value = "Development">Development</option>
+                                            <option value="Prayer">Prayer</option>
+                                        </select>       
+                                    </div> 
+                                    <div class="col-6 col-sm-2 mt-2">
+                                        <input type="time" class="form-control" value="14:00"  required readonly>   
+                                    </div>  
+                                    <div class="col-6 col-sm-2 mt-2 ">
+                                        <input type="time" class="form-control" value="15:00" required readonly>   
+                                    </div>  
+                                    <div class="col-6 col-sm-2 mt-2 ">
+                                        <input type="date" class="form-control" value="2020-06-27" required readonly>   
+                                    </div> 
+                                    <div class="col-6 col-sm-2 mt-2">                                     
+                                        <input type="file" class="form-control-file" disabled >
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row row  d-flex align-items-center justify-content-center">  
-                                <div class="col-12  mt-2">
-                                    <textarea type="text" class="form-control rounded-0"   placeholder = "Prototype model shown" required readonly></textarea>
-                                </div>
-                            </div> 
-                            <div class="form-row row  d-flex align-items-center justify-content-center">  
-                                <div class="col-3 col-sm-1 mt-2">
-                                    <button class="btn btn-dark form-control">Edit</button>   
-                                    
-                                </div>
-                                <div class="col-3 col-sm-1 mt-2">
-                                    <button class="btn btn-dark">Delete</button>      
+                                <div class="form-row row  d-flex align-items-center justify-content-center">  
+                                    <div class="col-12  mt-2">
+                                        <textarea type="text" class="form-control rounded-0"   placeholder = "Prototype model shown" required readonly></textarea>
+                                    </div>
                                 </div> 
-                            </div>  
-                        </form>
+                                <div class="form-row row  d-flex align-items-center justify-content-center">  
+                                    <div class="col-3 col-sm-1 mt-2">
+                                        <button class="btn btn-dark form-control">Edit</button>   
+                                        
+                                    </div>
+                                    <div class="col-3 col-sm-1 mt-2" >
+                                        <button class="btn btn-dark">Delete</button>      
+                                    </div> 
+                                </div>  
+                            </form>
+                        </div>
                     </div>
-                </div>
+                </li>
             </div>
+            
 
-
-            <div class ="container  mt-5">
-                <div class="row row-content">
-                    <div class="col-12">
-                        <form>
-                            <div class="form-row row  d-flex align-items-center justify-content-center">      
-                                <div class="col-6 col-sm-2 mt-2 ">
-                                    <input type="text" class="form-control" value = "SRS"  readonly>
-                                </div>  
-                                <div class="col-6 col-sm-2 mt-2 ">
-                                    <select class="form-control" required disabled readonly>
-                                        <option value = "" >Tags</option>
-                                        <option value="Meeting" >Meeting</option>
-                                        <option value = "Research">Research</option>
-                                        <option value = "Development" selected>Development</option>
-                                        <option value="Prayer">Prayer</option>
-                                    </select>       
-                                </div> 
-                                <div class="col-6 col-sm-2 mt-2">
-                                    <input type="time" class="form-control" value="10:00"  required readonly>   
-                                </div>  
-                                <div class="col-6 col-sm-2 mt-2 ">
-                                    <input type="time" class="form-control" value="12:00" required readonly>   
-                                </div>  
-                                <div class="col-6 col-sm-2 mt-2 ">
-                                    <input type="date" class="form-control" value="2020-06-27" required readonly>   
-                                </div> 
-                                <div class="col-6 col-sm-2 mt-2">                                     
-                                    <input type="file" class="form-control-file" disabled >
-                                 </div>
-           
-                            </div>
-                            <div class="form-row row  d-flex align-items-center justify-content-center">  
-                                <div class="col-12  mt-2">
-                                    <textarea type="text" class="form-control rounded-0"   placeholder = "Database Design Done" required readonly></textarea>
+            <div class ="container  mt-5" >
+                <li>SRS<div class="row row-content" >
+                        <div class="col-12" >
+                            <form>
+                                <div class="form-row row  d-flex align-items-center justify-content-center">      
+                                    <div class="col-6 col-sm-2 mt-2 ">
+                                        <input type="text" class="form-control" value = "SRS"  readonly>
+                                    </div>  
+                                    <div class="col-6 col-sm-2 mt-2 ">
+                                        <select class="form-control" required disabled readonly>
+                                            <option value = "" >Tags</option>
+                                            <option value="Meeting" >Meeting</option>
+                                            <option value = "Research">Research</option>
+                                            <option value = "Development" selected>Development</option>
+                                            <option value="Prayer">Prayer</option>
+                                        </select>       
+                                    </div> 
+                                    <div class="col-6 col-sm-2 mt-2">
+                                        <input type="time" class="form-control" value="10:00"  required readonly>   
+                                    </div>  
+                                    <div class="col-6 col-sm-2 mt-2 ">
+                                        <input type="time" class="form-control" value="12:00" required readonly>   
+                                    </div>  
+                                    <div class="col-6 col-sm-2 mt-2 ">
+                                        <input type="date" class="form-control" value="2020-06-27" required readonly>   
+                                    </div> 
+                                    <div class="col-6 col-sm-2 mt-2">                                     
+                                        <input type="file" class="form-control-file" disabled >
+                                     </div>
+               
                                 </div>
-                            </div> 
-                            <div class="form-row row  d-flex align-items-center justify-content-center">  
-                                <div class="col-3 col-sm-1 mt-2">
-                                    <button class="btn btn-dark form-control">Edit</button>    
+                                <div class="form-row row  d-flex align-items-center justify-content-center">  
+                                    <div class="col-12  mt-2">
+                                        <textarea type="text" class="form-control rounded-0"   placeholder = "Database Design Done" required readonly></textarea>
+                                    </div>
                                 </div> 
-                                <div class="col-3 col-sm-1 mt-2">
-                                    <button class="btn btn-dark">Delete</button>      
-                                </div>
-                            </div>  
-                        </form>
+                                <div class="form-row row  d-flex align-items-center justify-content-center">  
+                                    <div class="col-3 col-sm-1 mt-2">
+                                        <button class="btn btn-dark form-control">Edit</button>    
+                                    </div> 
+                                    <div class="col-3 col-sm-1 mt-2">
+                                        <button class="btn btn-dark">Delete</button>      
+                                    </div>
+                                </div>  
+                            </form>
+                        </div>
                     </div>
-                </div>
+                </li></div>
             </div>
+        </ul>
         </div>
 
 
